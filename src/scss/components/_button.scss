@@ -1,0 +1,14 @@
+.btn {
+	border-width: 0;
+	background-color: $decor-bg;
+	margin-right: 10px;
+	padding: 10px;
+	font-size: 20px;
+
+	&.active {
+	}
+}
+
+.btns-wrapper {
+	margin-bottom: 15px;
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Anvar Ahmadjanov</title>
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="./css/app.css" />
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<nav class="header-nav">
+				<a href="/">My Portfolio</a>
+				<ul class="header-menu">
+					<li><a href="##">TG</a></li>
+					<li><a href="##">Github</a></li>
+					<li><a href="##">Phone</a></li>
+					<li><a href="##">Mail</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<!-- Decor -->
+	<div class="decor">
+		<div class="container">
+			<img class="decor__img" src="./img/Anvar_Ahmadjanov.jpg" width="125px" height="125px" alt="Anvar Ahmadjanov" />
+		</div>
+	</div>
+
+	<!-- Content -->
+	<main class="container">
+		<!-- About -->
+		<section class="about">
+			<div class="container">
+				<h1 class="about__title">Air — Portfolio Template</h1>
+				<p class="about__description">
+					I'm a digital product designer crafting simple & beautiful user
+					experiences.
+				</p>
+			</div>
+		</section>
+		<!-- Works -->
+		<section class="works">
+			<h2 class="works__title">Works</h2>
+
+			<div class="btns-wrapper" id="myBtnContainer">
+				<button class="btn active" data-id="all">Show all</button>
+				<button class="btn" data-id="web-page">Web pages</button>
+				<button class="btn" data-id="web-app">Web Apps</button>
+				<button class="btn" data-id="other">Others</button>
+			</div>
+
+			<!-- ! Works Data -->
+			<%  
+	var webPages = [
+        { 
+					name: 'Elegant Dashboard',
+				  img: "elegantdashboard.png",
+				  link: 'https://elegantgoodies.gumroad.com/l/e-dashboard'
+				},
+        { 
+					name: 'New Tech Samarkand',
+				  img: "newtech.png",
+				  link: 'https://newtechsamarkand.uz/'
+				},
+        { 
+					name: 'E-commerce Admin Dashboard',
+				  img: "ecommerce.jpg",
+				  link: 'https://ecommerce-admin.com/'
+				},
+        { 
+					name: 'Dashwind',
+				  img: "dashwind.png",
+				  link: 'https://anvarmirzo.github.io/dashwind/'
+				},
+        { 
+					name: 'Imhotep Stroy',
+				  img: "aslnafis.svg",
+				  link: 'https://aslnafis.uz/ru/'
+				},
+        { 
+					name: 'Asl Nafis',
+				  img: "uluqi.jpg",
+				  link: 'https://aslnafis.uz/'
+				},
+        { 
+					name: 'Imhotep Stroy',
+				  img: "imhotep.jpg",
+				  link: 'https://anvarmirzo.github.io/imhotepDemo/imhotep/'
+				},
+				 { 
+					name: 'Techno Cable',
+				  img: "technocable.jpg",
+				  link: 'https://anvarmirzo.github.io/technocable/'
+				},
+        { 
+					name: 'Surfing',
+				  img: "surfing.jpg",
+				  link: 'https://anvarmirzo.github.io/surfing/'
+				},
+        { 
+					name: 'Sarajevo',
+				  img: "sarajevo.jpg",
+				  link: 'https://anvarmirzo.github.io/sarajevo/'
+				},
+        { 
+					name: 'Stone',
+				  img: "stone.png",
+				  link: 'https://anvarmirzo.github.io/stone/'
+				},
+        { 
+					name: 'App Landing',
+				  img: "applanding.png",
+				  link: 'https://anvarmirzo.github.io/app_landing/'
+				},
+        { 
+					name: 'Viking',
+				  img: "viking.jpg",
+				  link: 'https://anvarmirzo.github.io/viking/'
+				},
+        { 
+					name: 'Komola',
+				  img: "komola.jpg",
+				  link: 'https://anvarmirzo.github.io/komola/'
+				},
+        { 
+					name: 'Pizza',
+				  img: "pizza.jpg",
+				  link: 'https://anvarmirzo.github.io/pizza/'
+				},
+        { 
+					name: 'Startup',
+				  img: "startup.jpg",
+				  link: 'https://anvarmirzo.github.io/startup/'
+				},
+        { 
+					name: 'Daisy',
+				  img: "daisy.jpg",
+				  link: 'https://anvarmirzo.github.io/Daisy/'
+				},
+				{ 
+					name: 'CarePoint',
+				  img: "carepoint.jpg",
+				  link: 'https://anvarmirzo.github.io/investstroy/'
+				},
+        { 
+					name: 'Traveroo',
+				  img: "traveroo.png",
+				  link: 'https://anvarmirzo.github.io/testTask/'
+				},
+        { 
+					name: 'Workflow',
+				  img: "workflow.jpg",
+				  link: 'https://anvarmirzo.github.io/workflow/'
+				},
+        { 
+					name: 'Asia Med',
+				  img: "asiamed.jpg",
+				  link: 'https://anvarmirzo.github.io/AsiaMed/'
+				},
+        { 
+					name: 'Dave House',
+				  img: "davehouse.jpg",
+				  link: 'https://anvarmirzo.github.io/dave-house/'
+				},
+	]
+	
+		var webApp = [
+		{
+		name: 'My Top',
+		img: "myTop.svg",
+		link: 'https://react-next-app-nine.vercel.app/'
+		},
+		{
+		name: 'React Pizza',
+		img: "pizza_react.jpg",
+		link: 'https://study-react-pizza.herokuapp.com/'
+		},
+		{
+		name: 'Quiz App',
+		img: "quiz.jpg",
+		link: 'https://training-quiz.herokuapp.com/'
+	},
+]
+
+var others = [
+	{
+		name: 'Calories Counter',
+		img: "counter.jpg",
+		link: 'https://anvarmirzo.github.io/calories_counter/'
+	},
+	]
+	%>
+			<div class="row">
+				<% webPages.forEach(function(item) { %>
+				<div class="col-4 works-tab web-page">
+					<article class="content">
+						<div class="works-img">
+							<img src="./img/<%= item.img %>" alt="<%= item.name %>" />
+						</div>
+						<div class="content__info">
+							<h3 class="content__title"><%= item.name %></h3>
+							<a class="content__link" href="<%= item.link %>" target="_blank" rel="noopener noreferrer">View</a>
+						</div>
+					</article>
+				</div>
+				<% }) %>
+
+
+				<% webApp.forEach(function(item) { %>
+				<div class="col-4 works-tab web-app">
+					<article class="content">
+						<div class="works-img">
+							<img src="./img/<%= item.img %>" alt="<%= item.name %>" />
+						</div>
+						<div class="content__info">
+							<h3 class="content__title"><%= item.name %></h3>
+							<a class="content__link" href="<%= item.link %>" target="_blank" rel="noopener noreferrer">View</a>
+						</div>
+					</article>
+				</div>
+				<% }) %>
+
+				<% others.forEach(function(item) { %>
+				<div class="col-4 works-tab other">
+					<article class="content">
+						<div class="works-img">
+							<img src="./img/<%= item.img %>" alt="<%= item.name %>" />
+						</div>
+						<div class="content__info">
+							<h3 class="content__title"><%= item.name %></h3>
+							<a class="content__link" href="<%= item.link %>" target="_blank" rel="noopener noreferrer">View</a>
+						</div>
+					</article>
+				</div>
+				<% }) %>
+			</div>
+		</section>
+		<!-- Skills -->
+		<section class="skills">
+			<h2>Skills</h2>
+			<div class="skills-menu-wrapper">
+				<ul class="skills-menu">
+					<li>
+						<button class="skills-menu__item" type="button" title="Open List">
+							HTML
+						</button>
+					</li>
+					<li>
+						<button class="skills-menu__item" type="button" title="Open List">
+							CSS
+						</button>
+					</li>
+					<li>
+						<button class="skills-menu__item" type="button" title="Open List">
+							JS
+						</button>
+					</li>
+					<li>
+						<button class="skills-menu__item" type="button" title="Open List">
+							Gulp
+						</button>
+					</li>
+				</ul>
+				<ul class="skills-menu">
+					<li>
+						<button class="skills-menu__item" type="button" title="Open List">
+							React.js
+						</button>
+					</li>
+					<li>
+						<button class="skills-menu__item" type="button" title="Open List">
+							Redux
+						</button>
+					</li>
+					<li>
+						<button class="skills-menu__item" type="button" title="Open List">
+							TypeScript
+						</button>
+					</li>
+					<li>
+						<button class="skills-menu__item" type="button" title="Open List">
+							Git
+						</button>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- Connect -->
+		<section class="skills">
+			<h2>Connect</h2>
+			<div class="skills-menu-wrapper">
+				<ul class="skills-menu">
+					<li>
+						<a class="connect-menu__item" href="https://t.me/yourBadApple" target="_blank" rel="noopener noreferrer">
+							Telegram
+						</a>
+					</li>
+					<li>
+						<a class="connect-menu__item" href="https://www.instagram.com/yourbadapple/" target="_blank"
+							rel="noopener noreferrer">
+							Instagram
+						</a>
+					</li>
+					<li>
+						<a class="connect-menu__item" href="https://www.linkedin.com/in/anvar-akhmadjanov-45a297203" target="_blank"
+							rel="noopener noreferrer">
+							LinkedIn
+						</a>
+					</li>
+				</ul>
+				<ul class="skills-menu">
+					<li>
+						<a download="resume.pdf" class="connect-menu__item" href="resume.pdf">
+							Resume
+						</a>
+					</li>
+					<li>
+						<a class="connect-menu__item" href="http://" target="_blank" rel="noopener noreferrer">
+							Headhunter
+						</a>
+					</li>
+					<li>
+						<a class="connect-menu__item" href="mailto:www.barkalovadrey@gmail.com" target="_blank"
+							rel="noopener noreferrer">
+							Email
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<!-- Footer -->
+	<footer class="footer container">
+		<a href="/">Anvar Ahmadjanov</a>
+		<span>2021</span>
+	</footer>
+
+	<!-- Custom Scripts -->
+	<script src="./js/app.js"></script>
+</body>
+
+</html>

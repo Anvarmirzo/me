@@ -1,0 +1,12 @@
+.about {
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__description {
+    font-size: 24px;
+    font-weight: 600;
+    color: $text-brown;
+    fill: $text-brown;
+  }
+}

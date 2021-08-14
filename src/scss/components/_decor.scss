@@ -1,0 +1,14 @@
+.decor {
+  position: relative;
+  max-height: 30vh;
+  height: 30vh;
+  background-color: $decor-bg;
+  margin-bottom: 45px;
+
+  &__img {
+    position: absolute;
+    bottom: -45px;
+    border-radius: 12px;
+
+  }
+}
