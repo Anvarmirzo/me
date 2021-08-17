@@ -15,12 +15,20 @@
 	<header class="header">
 		<div class="container">
 			<nav class="header-nav">
-				<a href="/">My Portfolio</a>
+				<a class="logo" href="/">My Portfolio</a>
 				<ul class="header-menu">
-					<li><a href="##">TG</a></li>
-					<li><a href="##">Github</a></li>
-					<li><a href="##">Phone</a></li>
-					<li><a href="##">Mail</a></li>
+					<li><a href="https://t.me/yourBadApple" target="_blank" rel="noopener noreferrer">
+							<img width="25px" src="./img/telegram.svg" alt="Telegram">
+						</a></li>
+					<li><a href="https://github.com/Anvarmirzo" target="_blank" rel="noopener noreferrer">
+							<img width="25px" src="./img/github.svg" alt="Github">
+						</a></li>
+					<li><a href="tel:+998941728335">
+							<img width="25px" src="./img/phone.svg" alt="Phone">
+						</a></li>
+					<li><a href="mailto:www.barkalovadrey@gmail.com" target="_blank" rel="noopener noreferrer">
+							<img width="25px" src="./img/mail.svg" alt="Mail">
+						</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -37,10 +45,9 @@
 		<!-- About -->
 		<section class="about">
 			<div class="container">
-				<h1 class="about__title">Air — Portfolio Template</h1>
+				<h1 class="about__title">About me</h1>
 				<p class="about__description">
-					I'm a digital product designer crafting simple & beautiful user
-					experiences.
+					Hi, my name is Anvar and I am a front-end developer doing digital product development.
 				</p>
 			</div>
 		</section>
@@ -61,12 +68,7 @@
         { 
 					name: 'Elegant Dashboard',
 				  img: "elegantdashboard.png",
-				  link: 'https://elegantgoodies.gumroad.com/l/e-dashboard'
-				},
-        { 
-					name: 'New Tech Samarkand',
-				  img: "newtech.png",
-				  link: 'https://newtechsamarkand.uz/'
+				  link: 'https://dashboard.elegant-goodies.com/?ref=producthunt'
 				},
         { 
 					name: 'E-commerce Admin Dashboard',
@@ -76,17 +78,22 @@
         { 
 					name: 'Dashwind',
 				  img: "dashwind.png",
-				  link: 'https://anvarmirzo.github.io/dashwind/'
+				  link: 'https://elegantgoodies.gumroad.com/l/e-dashboard'
+				},
+				 { 
+					name: 'New Tech Samarkand',
+				  img: "newtech.png",
+				  link: 'https://newtechsamarkand.uz/'
 				},
         { 
-					name: 'Imhotep Stroy',
+					name: 'Asl Nafis',
 				  img: "aslnafis.svg",
 				  link: 'https://aslnafis.uz/ru/'
 				},
         { 
-					name: 'Asl Nafis',
+					name: 'Uluqi',
 				  img: "uluqi.jpg",
-				  link: 'https://aslnafis.uz/'
+				  link: 'https://anvarmirzo.github.io/uluqi/dist/'
 				},
         { 
 					name: 'Imhotep Stroy',
@@ -198,7 +205,7 @@ var others = [
 	%>
 			<div class="row">
 				<% webPages.forEach(function(item) { %>
-				<div class="col-4 works-tab web-page">
+				<div class="col-sm-6 col-md-4 works-tab web-page">
 					<article class="content">
 						<div class="works-img">
 							<img src="./img/<%= item.img %>" alt="<%= item.name %>" />
@@ -213,7 +220,7 @@ var others = [
 
 
 				<% webApp.forEach(function(item) { %>
-				<div class="col-4 works-tab web-app">
+				<div class="col-sm-6 col-md-4 works-tab web-app">
 					<article class="content">
 						<div class="works-img">
 							<img src="./img/<%= item.img %>" alt="<%= item.name %>" />
@@ -227,7 +234,7 @@ var others = [
 				<% }) %>
 
 				<% others.forEach(function(item) { %>
-				<div class="col-4 works-tab other">
+				<div class="col-sm-6 col-md-4 works-tab other">
 					<article class="content">
 						<div class="works-img">
 							<img src="./img/<%= item.img %>" alt="<%= item.name %>" />
@@ -321,7 +328,9 @@ var others = [
 						</a>
 					</li>
 					<li>
-						<a class="connect-menu__item" href="http://" target="_blank" rel="noopener noreferrer">
+						<a class="connect-menu__item"
+							href="https://navoi.hh.uz/applicant/resumes/view?resume=c46cf286ff07c4185c0039ed1f766963776342"
+							target="_blank" rel="noopener noreferrer">
 							Headhunter
 						</a>
 					</li>
